@@ -208,3 +208,132 @@ body {
   margin-right: 50px;
   border-radius: 5px;
 }
+
+@media (max-width: 1240px){
+  .container {
+    width: 800px;
+  }
+
+  .header-subtitle {
+    font-size: 43px;
+  }
+
+  .tovars-list__item {
+    width: 45%;
+    margin: 20px
+  }
+
+  .about-me-list__item {
+    width: 45%;
+    height: 350px;
+    margin: 20px;
+  }
+
+  .about-me-list__item img {
+    width: 50%;
+  }
+
+  .about-job-img-link {
+    width: 50%;
+  }
+
+  .footer-container div {
+    width: 60%;
+  }
+}
+
+@media (max-width: 840px){
+  .container {
+    width: 500px;
+  }
+
+  .header-container {
+    display: block;
+  }
+
+  .header-container div {
+    width: 100%;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  .header {
+    height: fit-content;
+    padding: 50px 0;
+  }
+
+  .tovars-list__item {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .about-me-list__item {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .about-job-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .map {
+    width: 100%;
+    margin: 0;
+    height: 300px;
+  }
+
+  .footer-content {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 840px){
+  .container {
+    width: 330px;
+  }
+
+  .header-title {
+    font-size: 70px;
+  }
+
+  .header-subtitle {
+    font-size: 30px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .tovars-list__item {
+    height: 250px;
+  }
+
+  .about-me__title {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+
+  .about-me-list__item {
+    height: 250px;
+  }
+
+  .about-job__title {
+    font-size: 30px;
+  }
+
+  .footer-content__text {
+    font-size: 19px;
+  }
+
+  .footer-content__text:nth-child(2) {
+    margin-bottom: 25px;
+  }
+}
