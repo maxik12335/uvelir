@@ -4,13 +4,23 @@
   box-sizing: border-box;
 }
 
+.test-img {
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}
+
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
+  padding: 0;
   margin: 0 auto;
   width: 1200px;
+  max-width: 1200px;
 }
 
 body {
@@ -92,6 +102,11 @@ body {
   height: 100%;
   object-fit: cover;
   transition: 0.3s;
+}
+
+#carouselExampleDarkTovars,
+#carouselExampleDarkAboutMe {
+  display: none;
 }
 
 .about-me {
@@ -218,15 +233,31 @@ body {
     font-size: 43px;
   }
 
+  .tovars-list,
+  .about-me-list {
+    display: none;
+  }
+
   .tovars-list__item {
     width: 45%;
     margin: 20px
+  }
+
+  #carouselExampleDarkTovars,
+  #carouselExampleDarkAboutMe {
+    display: block;
+  }
+
+  .tovars-img {
+    height: 60vh;
+    margin: 0 auto;
   }
 
   .about-me-list__item {
     width: 45%;
     height: 350px;
     margin: 20px;
+    margin: 0 auto;
   }
 
   .about-me-list__item img {
@@ -262,13 +293,18 @@ body {
     padding: 50px 0;
   }
 
+  .tovars-img {
+    height: 30vh;
+    margin: 0 auto;
+  }
+
   .tovars-list__item {
     width: 80%;
     margin: 20px auto;
   }
 
   .about-me-list__item {
-    width: 80%;
+    width: 60%;
     margin: 20px auto;
   }
 
@@ -295,7 +331,7 @@ body {
   }
 }
 
-@media (max-width: 840px){
+@media (max-width: 540px){
   .container {
     width: 330px;
   }
