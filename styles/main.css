@@ -295,11 +295,10 @@ body {
 
   .tovars,
   .about-me {
-    height: 100vh;
+    min-height: 100vh;
   }
 
   .tovars-img {
-    height: 30vh;
     margin: 0 auto;
   }
 
@@ -351,6 +350,24 @@ body {
 
   .section {
     padding: 50px 0;
+  }
+
+  .tovars-img {
+    height: 200px;
+  }
+
+  .tovars {
+    display: flex;
+  }
+
+  .tovars .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #carouselExampleDarkTovars {
+    width: 100%;
   }
 
   .tovars-list__item {
